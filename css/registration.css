@@ -1,0 +1,102 @@
+*{
+    text-decoration: none;
+    box-sizing: border-box; 
+}
+body{
+	background: linear-gradient(rgba(42, 50, 51, 0.3),
+								rgba(47, 163, 128, 0.3));
+	background-size: cover;
+	background-attachment: fixed;
+	font-family: sans-serif;
+}
+
+.registration{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	background: rgba(0,0,0,.7);
+
+}
+
+.registration>h1{
+	margin: 30px 140px;
+	padding: 0;	
+	text-align: center;
+	color: #fff;
+	font-size: 30px;
+	text-transform: uppercase;
+}
+
+.input-form{
+	margin: 15px 40px;
+	text-align: center;
+}
+
+.input-form input{
+	display: block;
+	padding: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	width: 100%;
+	color: #fff;
+	font-size: 18px;
+	background: none;
+	border: 1px solid #96f2b5;
+	box-sizing: border-box;
+}
+
+.input-form input[type="text"]:focus, 
+.input-form input[type="password"]:focus{
+	border: 1px solid #0fc3f5;
+}
+
+.input-form input[type="submit"]{
+	margin-top: 20px;
+	color: #fff;
+	font-weight: bold;
+	text-transform: uppercase;
+	border: none;
+	background: #0fc3f5;
+    cursor: pointer;
+	/*transition: .3s;*/
+}
+
+.input-form input[type="submit"]:hover{
+	background: #4442db;
+}
+
+.registration>a, .registration>.message{
+	display: block;
+	padding: 0 0 30px;
+	text-align: center;
+	color: #fff;
+	text-decoration: none;
+	transition: .5s;
+}
+
+.registration>.message{
+	display: block;
+	color: rgb(177, 28, 28);
+	border: 2px solid rgb(177, 28, 28);
+	padding: 10px 20px;
+	margin: 0 5px 30px;
+
+}
+
+.form a:hover, .form>p:hover{
+	color: #0fc3f5;
+}
+.error{
+	display: block;
+	color:rgb(218, 188, 54);
+	padding-top: 10px;
+}
+@media screen and (max-width: 515px){
+	.form h1{
+		margin: 30px 90px;
+	}
+}
+
+
+
